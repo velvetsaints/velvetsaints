@@ -2,10 +2,9 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Velvet Saints — Sacred Kink Rituals</title>
-  <link rel="stylesheet" href="style.css" />
-  <link rel="icon" href="dessert_diaries_favicon.png" type="image/png" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Velvet Saints</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <style>
     :root {
       --primary-100:#800000;
@@ -21,135 +20,142 @@
     }
 
     body {
-      background-color: var(--bg-100);
+      background: var(--bg-100);
       color: var(--text-100);
-      font-family: 'Helvetica Neue', sans-serif;
-      margin: 0;
-      padding: 0;
-      line-height: 1.6;
-    }
-
-    a {
-      color: var(--primary-300);
-      text-decoration: none;
-    }
-    a:hover {
-      color: var(--primary-200);
+      font-family: 'Georgia', serif;
+      line-height: 1.8;
     }
 
     header {
-      background-color: var(--bg-300);
       text-align: center;
-      padding: 3rem 1rem 2rem;
+      padding: 2rem;
+      background: linear-gradient(145deg, var(--primary-200), var(--primary-100));
     }
-    .logo {
-      max-width: 300px;
-      margin-bottom: 1rem;
+
+    header img {
+      max-width: 250px;
+      height: auto;
     }
-    .tagline {
-      font-size: 1.2rem;
-      color: var(--text-200);
+
+    header small {
+      display: block;
+      font-size: 1.1rem;
       margin-top: 0.5rem;
-    }
-
-    nav {
-      background-color: var(--bg-200);
-      display: flex;
-      justify-content: center;
-      gap: 2rem;
-      padding: 1rem 0;
-    }
-    nav img {
-      width: 40px;
-      height: 40px;
-      object-fit: contain;
-      transition: transform 0.2s ease;
-    }
-    nav img:hover {
-      transform: scale(1.1);
-    }
-
-    .preview {
-      background-color: var(--bg-200);
-      margin: 2rem auto;
-      padding: 2rem;
-      border-left: 4px solid var(--primary-100);
-      max-width: 800px;
-    }
-    .preview h2 a {
-      font-size: 1.6rem;
-      font-weight: bold;
-      color: var(--primary-100);
-    }
-    .preview p {
       color: var(--text-200);
     }
 
-    footer {
-      text-align: center;
-      padding: 2rem;
-      background-color: var(--bg-300);
-      color: var(--text-200);
-      font-size: 0.9rem;
+    section {
+      padding: 3rem 1rem;
+      border-bottom: 1px solid var(--bg-300);
+    }
+
+    .section-image {
+      max-width: 600px;
+      float: right;
+      margin-left: 2rem;
+      border: 2px solid var(--primary-300);
+    }
+
+    details {
+      background: var(--bg-200);
+      padding: 1rem;
+      border-radius: 0.5rem;
+      margin-top: 2rem;
+    }
+
+    textarea {
+      width: 100%;
+      min-height: 120px;
+      margin-bottom: 1rem;
+      background: var(--bg-100);
+      color: var(--text-100);
+      border: 1px solid var(--primary-300);
+      padding: 0.75rem;
+      resize: vertical;
+    }
+
+    button {
+      background: var(--primary-300);
+      color: var(--bg-100);
+      border: none;
+      padding: 0.5rem 1rem;
+      cursor: pointer;
     }
   </style>
 </head>
 <body>
-  <div class="container">
-    <header>
-      <img src="velvet_saints_logo.png" alt="Velvet Saints Logo" class="logo" />
-      <h1>Velvet Saints</h1>
-      <p class="tagline">Velvet-stained stories for sacred mess.</p>
-      <p>A glitchy altar for kink rituals, sensual chaos, and honest aftermaths. Come lay down your shame.</p>
-    </header>
+  <header>
+    <img src="/images/logo.png" alt="Velvet Saints Logo">
+    <small>glitchy altar for kink rituals, sensual chaos, and honest aftermaths. Come lay down your shame.</small>
+  </header>
 
-    <nav>
-      <a href="index.html"><img src="nav_home.png" alt="Home"></a>
-      <a href="about.html"><img src="nav_about.png" alt="About"></a>
-      <a href="contact.html"><img src="nav_contact.png" alt="Contact"></a>
-      <a href="categories.html"><img src="nav_categories.png" alt="Categories"></a>
-    </nav>
+  <nav class="nav justify-content-center py-3">
+    <a class="nav-link text-light" href="#rituals">Rituals</a>
+    <a class="nav-link text-light" href="#impact">Impact</a>
+    <a class="nav-link text-light" href="#aftercare">Aftercare</a>
+    <a class="nav-link text-light" href="#confessions">Confessions</a>
+    <a class="nav-link text-light" href="#contact">Contact</a>
+  </nav>
 
-    <main>
-      <div class="preview featured">
-        <h2><a href="cake.html">Let Them Eat Cake (Sitting)</a></h2>
-        <p>A sticky, silly, dead-sexy guide to dessert play. Why use a plate when you can serve dessert on your lover?</p>
-      </div>
+  <main class="container">
+    <section id="rituals">
+      <h2>Kink Rituals & Sacred Beginnings</h2>
+      <img src="/images/rituals-altar.png" alt="Goth femme kneeling at a candlelit altar" class="section-image">
+      <p>Begin with breath. Velvet Saints honors the practice of preparing your mind, body, and space for intentional kink play. From anointment rituals to clothing ceremonies, each gesture is a prayer of readiness.</p>
+      <p>Learn to craft your personal altar space — with scents, textures, and mood — before stepping into scenes of power, surrender, or chaotic desire.</p>
+    </section>
 
-      <div class="preview">
-        <h2><a href="ceremony_of_undoing.html">The Ceremony of Undoing</a></h2>
-        <p>Aftercare and unraveling. Shared breath, floor rituals, whispered absurdities. The sacred collapse of play.</p>
-      </div>
+    <section id="impact">
+      <h2>Impact, Noise & Negotiation</h2>
+      <p>From bruises to the beat of paddles on skin, this section dives deep into consensual pain and its aftermath. The aesthetics of impact are not only visual but emotional. What does it mean to give or take that kind of energy?</p>
+      <p>We'll cover technical guides for safety, emotional readiness, and how to remain present throughout scenes of deep intensity.</p>
+    </section>
 
-      <div class="preview">
-        <h2><a href="mirror.html">The Mirror Licks Back</a></h2>
-        <p>A love letter to kink shame, exhibitionism, and being seen too deeply. You want to hide. You want to be watched more.</p>
-      </div>
+    <section id="aftercare">
+      <h2>Aftercare as Worship</h2>
+      <p>Aftercare isn't just recovery — it's sacred closure. Velvet Saints explores the erotic tenderness that follows chaos: blankets, juice boxes, whispered affirmations, and the deep sleep that feels earned.</p>
+      <p>What does your body need after unraveling? How do you help someone else rebuild their edges? We'll answer these with ritual, softness, and nuance.</p>
+    </section>
 
-      <div class="preview">
-        <h2><a href="rope_burn_vespers.html">Rope Burn Vespers</a></h2>
-        <p>Ritual marks. Sacred restraint. The holy hush of rope aftercare and bruise worship.</p>
-      </div>
+    <section id="confessions">
+      <h2>Anonymous Confessions</h2>
+      <details>
+        <summary>💬 Share your story, shame-free</summary>
+        <ul>
+          <li>No hate speech</li>
+          <li>No personal identifiers</li>
+          <li>No illegal content</li>
+          <li>Respect all kink practices</li>
+        </ul>
+        <textarea id="confessionText" placeholder="What are you holding inside? Lay it down here..."></textarea>
+        <button onclick="postConfession()">Submit</button>
+        <div id="confessionFeed" class="mt-3"></div>
+      </details>
+    </section>
 
-      <div class="preview">
-        <h2><a href="worship_then_ruin.html">Worship Me, Then Ruin Me</a></h2>
-        <p>A pedestal. A wrecking ball. Consent-fueled praise and holy ruin all in one breath.</p>
-      </div>
+    <section id="contact">
+      <h2>Get In Touch</h2>
+      <p>This is a space curated with intention. Reach out if you’d like to collaborate, confess something longer, or bring an altar to your city.</p>
+      <p>Email: <a href="mailto:velvetsaints@protonmail.com" class="text-light">velvetsaints@protonmail.com</a></p>
+    </section>
+  </main>
 
-      <div class="preview">
-        <h2><a href="midnight_confessional.html">Midnight Confessional</a></h2>
-        <p>Voice note kinks and whispered truth. Late-night audio desire as devotional release.</p>
-      </div>
-
-      <div class="preview">
-        <h2><a href="altar_of_absurdity.html">Altar of Absurdity</a></h2>
-        <p>Holy chaos. Strap malfunctions, banana hammocks, and joy inside kink's weirdest corners.</p>
-      </div>
-    </main>
-
-    <footer>
-      <p>© Velvet Saints. All rituals honored.</p>
-    </footer>
-  </div>
+  <script>
+    function postConfession() {
+      const text = document.getElementById('confessionText').value.trim();
+      if (text === '') return;
+      const badWords = ['shit', 'fuck', 'damn', 'bitch']; // add more
+      let cleanText = text;
+      badWords.forEach(word => {
+        const regex = new RegExp(word, 'gi');
+        cleanText = cleanText.replace(regex, '****');
+      });
+      const entry = document.createElement('div');
+      entry.className = 'mt-2';
+      entry.innerText = cleanText;
+      document.getElementById('confessionFeed').prepend(entry);
+      document.getElementById('confessionText').value = '';
+    }
+  </script>
 </body>
 </html>
