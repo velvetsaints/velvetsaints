@@ -1,0 +1,74 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Helvetica Neue', sans-serif;
+  background-color: #0f0f0f;
+  color: #f0f0f0;
+  background-image: url("https://www.transparenttextures.com/patterns/dark-mosaic.png");
+  background-attachment: fixed;
+}
+
+.container {
+  max-width: 900px;
+  margin: auto;
+  padding: 4rem 2rem;
+  background: rgba(10, 0, 15, 0.85);
+  box-shadow: 0 0 40px rgba(255, 20, 147, 0.2);
+  border-radius: 16px;
+}
+
+header img.logo {
+  max-width: 100%;
+  margin-bottom: 2rem;
+  border-radius: 12px;
+}
+
+header h1 {
+  font-family: 'Cinzel Decorative', cursive;
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+  color: #ffb6f2;
+  text-align: center;
+}
+
+.tagline {
+  font-style: italic;
+  color: #ccc;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.preview {
+  margin-top: 2rem;
+  padding: 1rem 1.5rem;
+  border-left: 4px solid #ff69b4;
+  background-color: rgba(255, 255, 255, 0.05);
+  border-radius: 8px;
+}
+
+.preview h2 a {
+  color: #84e8f0;
+  text-decoration: none;
+  font-size: 1.3rem;
+}
+
+.preview h2 a:hover {
+  text-decoration: underline;
+  color: #ffffff;
+}
+
+.preview p {
+  color: #ddd;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+footer {
+  text-align: center;
+  font-size: 0.9rem;
+  color: #999;
+  margin-top: 3rem;
+}
