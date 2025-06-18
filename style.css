@@ -1,74 +1,78 @@
-
-@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&display=swap');
+:root {
+  --primary-100: #FF0066;
+  --primary-200: #ff5c93;
+  --primary-300: #ffccf6;
+  --accent-100: #00CCFF;
+  --accent-200: #006c9b;
+  --text-100: #FFFFFF;
+  --text-200: #e0e0e0;
+  --bg-100: #2B1E2F;
+  --bg-200: #3b2d3f;
+  --bg-300: #544558;
+  --glitch-shadow: 0 0 5px var(--accent-100), 0 0 10px var(--primary-100);
+}
 
 body {
+  background-color: var(--bg-100);
+  color: var(--text-100);
+  font-family: 'Helvetica Neue', sans-serif;
   margin: 0;
   padding: 0;
-  font-family: 'Helvetica Neue', sans-serif;
-  background-color: #0f0f0f;
-  color: #f0f0f0;
-  background-image: url("https://www.transparenttextures.com/patterns/dark-mosaic.png");
-  background-attachment: fixed;
+  line-height: 1.6;
 }
 
-.container {
-  max-width: 900px;
-  margin: auto;
-  padding: 4rem 2rem;
-  background: rgba(10, 0, 15, 0.85);
-  box-shadow: 0 0 40px rgba(255, 20, 147, 0.2);
-  border-radius: 16px;
+a {
+  color: var(--accent-100);
+  text-decoration: none;
+  position: relative;
+  transition: color 0.2s ease;
+}
+a:hover {
+  color: var(--primary-100);
+  text-shadow: var(--glitch-shadow);
 }
 
-header img.logo {
-  max-width: 100%;
-  margin-bottom: 2rem;
-  border-radius: 12px;
-}
-
-header h1 {
-  font-family: 'Cinzel Decorative', cursive;
-  font-size: 2.5rem;
-  margin-bottom: 0.5rem;
-  color: #ffb6f2;
+header {
+  background-color: var(--bg-300);
   text-align: center;
+  padding: 3rem 1rem 2rem;
 }
-
-.tagline {
-  font-style: italic;
-  color: #ccc;
-  text-align: center;
+.logo {
+  max-width: 300px;
   margin-bottom: 1rem;
+}
+.tagline {
+  font-size: 1.2rem;
+  color: var(--text-200);
+  margin-top: 0.5rem;
 }
 
 .preview {
-  margin-top: 2rem;
-  padding: 1rem 1.5rem;
-  border-left: 4px solid #ff69b4;
-  background-color: rgba(255, 255, 255, 0.05);
-  border-radius: 8px;
+  background-color: var(--bg-200);
+  margin: 2rem auto;
+  padding: 2rem;
+  border-left: 4px solid var(--primary-100);
+  max-width: 800px;
+  transition: all 0.3s ease;
 }
-
+.preview:hover {
+  transform: scale(1.02);
+  box-shadow: 0 0 15px var(--primary-300);
+  background-color: var(--bg-300);
+}
 .preview h2 a {
-  color: #84e8f0;
-  text-decoration: none;
-  font-size: 1.3rem;
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: var(--primary-100);
 }
-
-.preview h2 a:hover {
-  text-decoration: underline;
-  color: #ffffff;
-}
-
 .preview p {
-  color: #ddd;
-  font-size: 1rem;
-  line-height: 1.5;
+  color: var(--text-200);
 }
 
 footer {
   text-align: center;
+  padding: 2rem;
+  background-color: var(--bg-300);
+  color: var(--text-200);
   font-size: 0.9rem;
-  color: #999;
-  margin-top: 3rem;
 }
